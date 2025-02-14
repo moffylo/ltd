@@ -1,0 +1,670 @@
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #ffffff; /* White background color */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  margin-top: -19px;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+
+
+.header-img{
+  margin-top: 150px;
+  height: 700px;
+}
+
+
+
+
+
+
+
+
+
+.header-main{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+}
+.about-header {
+  background-image: url('about.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 650px; /* Sets the height to 900px */
+  width: 100%; /* Ensures the div takes the full width of the page */
+  position: relative; /* Allows for positioning child elements */
+  display: flex; /* Flexbox for centering content (if needed) */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  color: #fff; /* Text color (adjust as needed) */
+  text-align: center; /* Centers text */
+  margin-bottom: 100px;
+}
+
+.contact-header {
+  background-image: url('contact.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 650px; /* Sets the height to 900px */
+  width: 100%; /* Ensures the div takes the full width of the page */
+  position: relative; /* Allows for positioning child elements */
+  display: flex; /* Flexbox for centering content (if needed) */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  color: #fff; /* Text color (adjust as needed) */
+  text-align: center; /* Centers text */
+  margin-bottom: 100px;
+}
+
+#slider{
+  overflow: hidden;
+  margin-top: -40px;
+}
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img{
+  float: left;
+  width: 20%;
+}
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+
+}
+
+.h6{
+  font-size: 50px;
+  color: white; 
+  margin-top: 300px; 
+  margin-bottom: 50px;
+  font-family: "Philosopher", sans-serif;
+  text-shadow: 2px 2px 4px rgba(197, 122, 23, 0.808); /* Add text shadow for 3D effect */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right; /* Align links to the left */
+}
+
+nav ul li a:hover {
+  color: #ff4500; /* Change to your preferred hover color */
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+
+
+section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+
+#logo {
+  float: left; /* Align to the right */
+  width: 93px; /* Adjust the width of the logo */
+  height: 93px; /* Adjust the height of the logo */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflowing content */
+}
+/* Basic styles */
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 40px;
+  padding-bottom: 40px; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+
+ .sign-container {
+  width: 75%;
+  height: 100%;
+  position: relative;
+}
+
+.sign-picture {
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%; /* Adjust according to your image aspect ratio */
+  transition: opacity 1s ease; /* Add smooth transition */
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  
+}
+
+.sign-button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #001933;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 1s ease; /* Add smooth transition */
+  font-weight: 600; 
+  text-align: left;
+  font-size: larger;
+}
+
+/* Hover effect */
+.sign-container:hover .sign-picture {
+  opacity: 0; /* Hide the image on hover */
+}
+
+.sign-container:hover .sign-button {
+  opacity: 1; /* Show the button on hover */
+}
+
+.PT-picture {
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+  height: 100%; /* Adjust according to your image aspect ratio */
+  top: 0;
+  left: 0;  
+}
+
+/* Basic styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 40px;
+  padding-bottom: 40px;  
+  background-color: #001933;
+  margin-top: -50px;
+}
+.container4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 40px;
+  padding-bottom: 40px;  
+  margin-top: -50px;
+  margin-left: 100px;
+  margin-right: 100px; 
+}
+.container0 {
+  margin-bottom: 300px;
+}
+.contact-icons {
+  text-align: center;
+  margin-top: 20px;
+
+}
+.contact-icons a {
+  color: #333; /* Icon color */
+  margin: 0 10px;
+}
+.contact-icons a:hover {
+  color: #007bff; /* Change to your preferred hover color */
+}
+.about_container{
+  background-color: #001933;
+  margin-bottom: -50px;
+  display: flex; /* Flexbox to create columns */
+  justify-content: space-between; /* Space out the columns */
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Left and right padding */
+  margin-left: 100px;
+}
+.about-column {
+  flex: 1; /* Make both columns take equal space */
+  margin: 0 20px; /* Add margin between the columns */
+}
+.about-column h3 {
+  font-size: 50px; /* Heading font size */
+  margin-bottom: 20px; /* Margin below heading */
+  color: #fff; /* Heading color */
+  text-align: left;
+}
+
+.about-column p {
+  font-size: 14px; /* Paragraph font size */
+  line-height: 1.6; /* Line height for better readability */
+  color: #fff; /* Heading color */
+}
+.p2{
+  color: white;
+}
+
+
+.footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Footer text color */
+  padding: 40px 0px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Left and right padding */
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px; /* Margin between columns */
+  min-width: 250px; /* Minimum width for each column */
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.about-us{
+ display: none;   
+}
+.SPH{
+  width: fit-content;
+  height: 550px;
+  margin-top: 100px;
+  margin-left: 350px;
+  
+}
+.contact-form {
+  display: flex; /* Flexbox for form elements */
+  flex-direction: column; /* Align elements vertically */
+  gap: 10px; /* Spacing between form elements */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Font size for inputs */
+}
+
+.contact-form button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  padding: 10px; /* Button padding */
+  border-radius: 4px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Font size for button */
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center align footer bottom text */
+  padding: 20px 0; /* Top and bottom padding */
+  border-top: 1px solid #444; /* Top border color */
+  margin-top: 20px; /* Margin above footer bottom */
+  font-size: 14px; /* Font size for footer bottom */
+}
+
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .footer-column {
+      min-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .header-img{
+    margin-top: 150px;
+    height: 400px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .about-column {
+    min-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 110px;
+    
+}
+.contact-form input,
+.contact-form textarea {
+  width: 90%; /* Full width for inputs */
+}
+.contact-form button {
+  width: 90%;
+}
+.about-column h3 {
+  font-size: 30px; /* Heading font size */
+}
+
+
+.about_container {
+    flex-direction: column;
+    align-items: center;
+}
+.SPH{
+  margin-left: 0px;
+  width: 100%;
+}
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+
+  #logo {
+    width: 70px; /* Adjust the width of the logo */
+    height: 70px; /* Adjust the height of the logo */
+    border-radius: 50%; /* Make it circular */
+    margin-top: -10px; /* Add margin-top to create space from the top */
+    order: 2; /* Position it on the right */
+  }
+
+  .header-main{
+    margin-top: 20px;
+  }
+
+  .navbar{
+    margin-top: -40px;
+  }
+ 
+
+
+    h1 {
+      display: none;
+    }
+    .H1{
+      display: none;
+    }
+  .header-menu ul li {
+    display: none;
+  }
+  #slider{
+    overflow: hidden;
+    margin-top: -80px;
+  }
+  h2 {
+    display: none;
+  }
+  .h6{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 60px;
+  }
+  .container2 {
+    display: list-item;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+    margin-right: 90px;
+    padding-right: 0px;
+  }
+  .sign-container {
+    align-items: center;
+  }
+  
+  .about-header {
+    background-position: right; /* Centers the image */
+  }
+  .contact-header {
+    background-position: right; /* Centers the image */
+  }
+  .button{
+  display: none;
+  }
+  .about-us {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .about-us h3 {
+    font-size: 30px; /* Heading font size */
+    margin-bottom: 20px; /* Margin below heading */
+    color: #fff; /* Heading color */
+    text-align: center;
+  }
+  
+  .about-us p {
+    font-size: 14px; /* Paragraph font size */
+    line-height: 1.6; /* Line height for better readability */
+    color: #fff; /* Heading color */
+    text-align: justify;
+  }
+
+  .contact-icons p {
+    font-size: 10px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .container4 {
+    margin-left: 45px; 
+    margin-right: 200px;
+  }
+
+  .mobile_img{
+    height: 100%;
+    width: 100%;
+    margin-left: -10px;
+  }
+
+  .PT-picture{
+    height: 50px;
+    width: 100px;
+  }
+
+  /* Hover effect */
+.sign-container:hover .sign-picture {
+  opacity: 1; /* Hide the image on hover */
+}
+
+.sign-container:hover .sign-button {
+  opacity: 0; /* Show the button on hover */
+}
+
+
+}
