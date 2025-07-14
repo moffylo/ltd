@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+    
     $to = "admin@moffylo.com";
     $subject = "New Message from Website";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
