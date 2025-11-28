@@ -149,7 +149,7 @@ body {
 }
 
 .contact-header {
-  background-image: url('contact.jpg'); /* Path to your image */
+  background-image: url('contact.gif'); /* Path to your image */
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: center; /* Centers the image */
   height: 650px; /* Sets the height to 900px */
