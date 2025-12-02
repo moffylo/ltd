@@ -556,7 +556,7 @@ footer {
     width: 70px; /* Adjust the width of the logo */
     height: 70px; /* Adjust the height of the logo */
     border-radius: 50%; /* Make it circular */
-    margin-top: -10px; /* Add margin-top to create space from the top */
+    margin-top: 10px; /* Add margin-top to create space from the top */
     order: 2; /* Position it on the right */
   }
 
