@@ -70,6 +70,7 @@ body {
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  margin-top: 30px;
 }
 
 .toggle-button .bar {
@@ -564,7 +565,7 @@ footer {
   }
 
   .navbar{
-    margin-top: 40px;
+    margin-top: -40px;
   }
  
 
