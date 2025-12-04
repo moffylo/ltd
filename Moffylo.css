@@ -12,11 +12,6 @@ body {
 
 
 
-.about_paragraph {
-  display: none;
-}
-
-
 
 
 * {
@@ -539,9 +534,6 @@ footer {
   font-size: 30px; /* Heading font size */
 }
 
-.about_paragraph {
-  display: block;
-}
 
 .about_container {
     flex-direction: column;
