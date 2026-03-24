@@ -133,6 +133,85 @@
             background: #333;
             color: #fff;
         }
+        
+    @media only screen and (max-width: 600px){
+
+    body{
+        overflow: auto;
+    }
+
+    .container{
+        width: 95%;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container .slide .item{
+        width: 120px;
+        height: 180px;
+    }
+
+    /* Main active slides */
+    .slide .item:nth-child(1),
+    .slide .item:nth-child(2){
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    /* Stack smaller previews tighter */
+    .slide .item:nth-child(3){
+        left: 60%;
+    }
+
+    .slide .item:nth-child(4){
+        left: calc(60% + 130px);
+    }
+
+    .slide .item:nth-child(5){
+        left: calc(60% + 260px);
+    }
+
+    .slide .item:nth-child(n + 6){
+        left: calc(60% + 390px);
+        opacity: 0;
+    }
+
+    /* Content adjustments */
+    .item .content{
+        left: 20px;
+        width: 80%;
+    }
+
+    .content .name{
+        font-size: 22px;
+    }
+
+    .content .des{
+        font-size: 14px;
+    }
+
+    .content button{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    /* Buttons */
+    .button{
+        bottom: 10px;
+    }
+
+    .button button{
+        width: 35px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+.slide .item:nth-child(n + 4){
+    display: none;
+}
     </style>
 </head>
 
